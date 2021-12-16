@@ -1,0 +1,41 @@
+{
+
+    "manifest_version": 2,
+    "name": "Cambio en campo Buscar",
+    "version": "1.0",
+    "description": "asignar el valor a variables de pagina",
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "index.html"
+    },
+
+    "background": {
+        "scripts": ["eventos.js"],
+        "persistent": true
+    },
+
+    "options_page": "",
+
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus",
+        "https://*/*",
+        "https://www.youtube.com/",
+        "https://www.w3schools.com/js/*",
+        "https://restcountries.eu/rest/v2/region/europe",
+        "https://free3d.com/"
+    ],
+    "matches": [
+        "https://www.youtube.com/",
+        "https://www.youtube.com//*",
+        "https://restcountries.eu/rest/v2/region/europe",
+        "https://free3d.com/*/"
+
+    ]
+}
